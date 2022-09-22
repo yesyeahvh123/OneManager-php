@@ -323,7 +323,7 @@ function main($path)
     $_SERVER['ajax']=0;
     if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) if ($_SERVER['HTTP_X_REQUESTED_WITH']=='XMLHttpRequest') $_SERVER['ajax']=1;
 
-    if (!isreferhost()) return header('Location: https://www.google.com'); exit();
+    if (!isreferhost()) return header('Location: https://www.google.com');
 
 
     // Operate
